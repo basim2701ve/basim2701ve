@@ -1,0 +1,12 @@
+; Rules to follow while declaring arrays:
+;
+; Rule #1: You must have a declarative keyword like Dim/Global/Local before the declaration unless the array is assigned a value from a functions return (Ex: StringSplit)
+; Rule #2: You must declare the number of dimensions but not necessarily the size of the dimension if you are gonna assign the values at the time of declaration.
+#include <Array.au3>
+
+Local $aEmptyArray[0] ; Creates an Array with 0 elements (aka an Empty Array).
+
+Local $aArrayWithData[1] = ["Data"]
+
+_ArrayDisplay($aEmptyArray)
+_ArrayDisplay($aArrayWithData)
